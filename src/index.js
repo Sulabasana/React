@@ -5,9 +5,20 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 class Layout extends React.Component {
+	//Here is the right place to create functions
+	getVal(val){
+		return "William" + val	
+	}
+	constructor(){
+		super();
+		this.name = "Willy"
+	}
+
 	render(){
-		return(
-			<h1>It works!</h1>
+		const name = "Will"
+				return(
+			//<h1>It's {this.getVal(" The Morron")}!</h1>
+			<h1>It's {this.name}!</h1>
 			);
 		}
 	}
